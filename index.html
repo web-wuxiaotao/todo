@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width"/>
+		  <!-- Add to homescreen for Safari on Ios -->
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-title" content="ToDo">
+	    <link rel="apple-touch-icon" href="img/logo.jpg">
+	
+	    <!-- Add to homescreen for Chrome on Android -->
+	    <meta name="mobile-web-app-capable" content="yes">
+	    <meta name="application-name" content="ToDo">
+	    <meta name="theme-color" content="#2F3BA2">
+	    <link rel="icon" sizes="192x192" href="img/logo.jpg">
+		<title></title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_24b98ou935jt6gvi.css" />
+		<link rel="stylesheet" href="css/todos.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/todos.js"></script>
+	</head>
+	<body>
+		<div class="con">
+			<div class="header">
+				<div class="left">
+					<div class="nav"><i><img src="img/2.png"/></i></div>
+					<div class="state">全部</div>
+				</div>
+				<div class="new">+</div>
+			</div>
+			<div class="text">
+				<ul class="todolist"></ul>
+			</div>
+			<!--<div class="null">
+				<div class="pic"></div>
+				<div class="nothing"></div>
+				<div class="add"></div>
+			</div>-->
+		</div>
+		<div class="del">
+			<i><img src="img/6.png"/></i>
+		</div>
+		<!--新建-->
+		<div class="found">
+			<div class="head">
+				<div class="f-left">
+					<div class="off"><i><img src="img/1.png"/></i></div>
+					<div class="news">新建</div>
+				</div>
+				<div class="com">完成</div>
+			</div>
+			<div class="input">
+				<span>请输入您的事项:</span>
+				<input type="text" />
+			</div>
+		</div>
+		<div class="mask"></div>
+		<div class="sidenav">
+			<ul id="ul">
+				<li data-role="all">
+					<i><img src="img/3.png"/></i>
+					<span>全部</span>
+				</li>
+				<li data-role="rem">
+					<i><img src="img/4.png"/></i>
+					<span>进行中</span>
+				</li>
+				<li data-role="com">
+					<i><img src="img/5.png"/></i>
+					<span>已完成</span>
+				</li>
+				<li>
+					<i></i>
+					<span></span>
+				</li>
+				<li>
+					<i></i>
+					<span></span>
+				</li>
+				<li>
+					<i></i>
+					<span></span>
+				</li>
+			</ul>
+		</div>	
+	</body>
+</html>

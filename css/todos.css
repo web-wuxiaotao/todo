@@ -1,0 +1,517 @@
+@charset "UTF-8";
+html {
+  font-size: 102px;
+  height: 100%;
+}
+
+body {
+  font-family: "微软雅黑";
+  font-size: 16px;
+  background: #fafafa;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  perspective: 2000px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 43.52px;
+  }
+  .signal {
+    height: 18.77333px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48.96px;
+  }
+  .signal {
+    height: 21.12px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 51px;
+  }
+  .signal {
+    height: 22px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 52.224px;
+  }
+  .signal {
+    height: 22.528px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 56.032px;
+  }
+  .signal {
+    height: 24.17067px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 56.304px;
+  }
+  .signal {
+    height: 24.288px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 81.6px;
+  }
+  .signal {
+    height: 35.2px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+
+.con {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #fafafa;
+}
+
+.con .header {
+  height: 1rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  background: #89c348;
+  position: relative;
+}
+
+.con .header .left {
+  height: 1rem;
+  position: relative;
+}
+
+.con .header .left .nav {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0.2rem;
+  height: 0.4rem;
+  width: 0.4rem;
+}
+
+.con .header .left .nav i {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.con .header .left .nav i img {
+  display: block;
+  width: 20px;
+}
+
+.con .header .left .state {
+  position: absolute;
+  bottom: 0.38rem;
+  left: 0.8rem;
+  height: 0.4rem;
+  font-size: 0.4rem;
+  color: #fff;
+}
+
+.con .header .new {
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0.3rem;
+  font-size: 30px;
+  color: #fff;
+}
+
+.con .text .todolist .li {
+  position: relative;
+  height: 1.5rem;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.3);
+}
+
+.con .text .todolist .li .complete {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.1rem;
+  margin: auto;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.con .text .todolist .li .complete i {
+  display: none;
+  width: 16px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -0.1rem;
+  background: #CCCCCC;
+}
+
+.con .text .todolist .li .content {
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+  color: #333;
+  font-size: 24px;
+  line-height: 1rem;
+}
+
+.con .text .todolist .li .date {
+  padding: 0 0.5rem;
+  color: #666;
+  font-size: 12px;
+  line-height: 0.5rem;
+}
+
+.con .text .todolist .li .delete {
+  display: none;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.2rem;
+}
+
+.con .text .todolist .li .delete img {
+  display: block;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.con .text .todolist .done .complete i {
+  display: block;
+}
+
+.con .text .todolist .done .complete i img {
+  display: block;
+  width: 100%;
+}
+
+.con .text .todolist .done .content {
+  color: #CCCCCC;
+}
+
+.con .text .todolist .done .delete {
+  display: block;
+}
+
+.del {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  z-index: 2;
+  height: 1rem;
+  line-height: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid #999;
+  text-align: center;
+}
+
+.del i {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.del i img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: 24px;
+}
+
+.found {
+  transform: scale(0);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+
+.found .head {
+  height: 1rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  background: #89c348;
+  position: relative;
+}
+
+.found .head .f-left {
+  height: 1rem;
+  position: relative;
+}
+
+.found .head .f-left .off {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0.2rem;
+  height: 0.4rem;
+  width: 0.4rem;
+}
+
+.found .head .f-left .off i {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.found .head .f-left .off i img {
+  display: block;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.found .head .f-left .news {
+  position: absolute;
+  bottom: 0.38rem;
+  left: 0.8rem;
+  height: 0.4rem;
+  font-size: 0.4rem;
+  color: #fff;
+}
+
+.found .head .com {
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0.3rem;
+  font-size: 0.4rem;
+  color: #fff;
+}
+
+.found .input {
+  background: #fafafa;
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+}
+
+.found .input span {
+  padding-top: 0.2rem;
+  display: block;
+  font-size: 16px;
+  color: #666;
+}
+
+.found .input input {
+  width: 100%;
+  height: 1rem;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #89C348;
+  font-size: 0.5rem;
+}
+
+@keyframes found {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.found-trans {
+  display: block;
+  animation: found 0.5s ease forwards;
+}
+
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+i {
+  display: block;
+}
+
+.sidenav {
+  transform: translateX(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 85%;
+  height: 100%;
+  background: #fafafa;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+
+.sidenav ul li {
+  padding: 0 0.5rem;
+  height: 1rem;
+  position: relative;
+}
+
+.sidenav ul li i {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.5rem;
+}
+
+.sidenav ul li i img {
+  display: block;
+  width: 24px;
+}
+
+.sidenav ul li span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 1.5rem;
+  color: #666666;
+  font-size: 20px;
+  line-height: 1rem;
+}
+
+@keyframes side {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.active {
+  animation: side 0.4s ease forwards;
+}
+
+@keyframes logo {
+  from {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotateY(-180deg);
+  }
+}
+
+.logo {
+  background: url(../img/0330027554c727200000158fcc585d6.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transform-origin: left center;
+  animation: logo 3s ease 2s forwards;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3rem;
+}
